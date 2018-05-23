@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import About from './views/About.vue'
+import MyVue from './views/MyVue.vue'
+import Blog from './views/Blog.vue'
+import Odinn from './views/Odinn.vue'
+import Litla from './views/Litla.vue'
 
 Vue.use(Router)
 
@@ -13,9 +16,24 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      component: About
-    }
+      path: '/myvue',
+      name: 'myvue',
+      component: MyVue
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: Blog
+    },
+    {
+      path: '/odinn',
+      name: 'odinn',
+      component: Odinn
+    },
+    {
+      path: '/litla',
+      name: 'litla',
+      component: Litla
+    },
   ]
 })
